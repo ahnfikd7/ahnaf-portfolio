@@ -1,0 +1,94 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #333;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about, .skills, .projects, .contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #f4f4f4;
+  border-radius: 5px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact form input, .contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}

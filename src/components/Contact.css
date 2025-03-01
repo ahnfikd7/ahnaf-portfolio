@@ -1,0 +1,90 @@
+/* Contact Section */
+.contact-section {
+  position: relative;
+  padding: 50px;
+  background: linear-gradient(-45deg, #001a00, #003300, #004d00, #002200);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  color: #00ff00;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #00ff00;
+  display: inline-block;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* Animated Email */
+.contact-email {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #00ff00;
+}
+
+.contact-email a {
+  color: #00ff00;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-email a:hover {
+  color: #00ffcc;
+}
+
+/* Social Media Container */
+.social-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Floating Social Icons */
+.social-link {
+  font-size: 2.5rem;
+  color: #00ff00;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  color: #00ffcc;
+}
+
+/* Specific Colors for Each Platform */
+.instagram { color: #e1306c; }
+.facebook { color: #1877f2; }
+.youtube { color: #ff0000; }
+
+.instagram:hover { color: #ff80a0; }
+.facebook:hover { color: #4b9eff; }
+.youtube:hover { color: #ff6666; }
+
+/* Hacker-Style Animated Message */
+.contact-message {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+  animation: textGlow 1.5s infinite alternate;
+}
+
+@keyframes textGlow {
+  0% { text-shadow: 0 0 5px #00ff00; }
+  100% { text-shadow: 0 0 15px #00ffcc; }
+}

@@ -1,0 +1,168 @@
+/* Tech-Savvy Background */
+.experience-section {
+  position: relative;
+  padding: 50px;
+  background: linear-gradient(-45deg, #001a00, #003300, #004d00, #002200);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  color: #00ff00;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating Icons (Subtle Terminal-Style Icons) */
+.floating-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.floating-icons .icon {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  color: #00ff00;
+}
+
+.laptop { top: 10%; left: 15%; animation: floatAnimation 6s ease-in-out infinite; }
+.camera { top: 50%; right: 10%; animation: floatAnimation 8s ease-in-out infinite; }
+.drone { bottom: 20%; left: 25%; animation: floatAnimation 5s ease-in-out infinite; }
+.code { bottom: 5%; right: 30%; animation: floatAnimation 7s ease-in-out infinite; }
+
+@keyframes floatAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #00ff00;
+  display: inline-block;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* Grid Layout */
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Experience Cards */
+.experience-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: left;
+}
+
+/* Hover Effect */
+.experience-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
+}
+
+/* Media (Video or Image) */
+.experience-media {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #00ff00;
+}
+
+/* Card Header */
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.experience-icon {
+  font-size: 2rem;
+  color: #00ff00;
+}
+
+/* Title in Card */
+.experience-card h3 {
+  font-size: 1.4rem;
+  color: #00ff00;
+  margin: 0;
+}
+
+/* Date Styling */
+.experience-duration {
+  font-style: italic;
+  color: #66ff66;
+  margin: 5px 0;
+}
+
+/* Description List */
+.experience-description {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.experience-description li {
+  font-size: 1rem;
+  padding: 5px 0;
+  border-left: 3px solid #00ff00;
+  padding-left: 10px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* List Hover Effect */
+.experience-description li:hover {
+  transform: translateX(5px);
+  color: #00ffcc;
+}
+
+/* Cyberpunk Button Style */
+.tech-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: rgba(0, 255, 0, 0.2);
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-button:hover {
+  background: rgba(0, 255, 0, 0.5);
+  transform: translateY(-3px);
+}
+
+/* Terminal Cursor Effect */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.experience-title::after {
+  content: "|";
+  animation: blink 1s step-start infinite;
+}
