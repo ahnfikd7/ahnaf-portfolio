@@ -7,7 +7,7 @@ const experiences = [
   {
     title: "Software Engineer Co-op - Cleo Robotics",
     icon: <FaRobot className="experience-icon" />,
-    image: "/images/cleodrone.JPG",
+    image: "/images/cleodrone.png",
     duration: "July 2024 - December 2024",
     description: [
       "Led the transition of the drone software pipeline to ROS2, optimizing communication between flight modules.",
